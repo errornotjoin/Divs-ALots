@@ -1,0 +1,196 @@
+body
+{
+    background-color: #040405;
+}
+.Main_body div
+{
+    display: grid;
+    grid-template-columns: 5% 5% 5% 5%5% 5% 5% 5%5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% ;
+    gap: 0%;
+}
+.New_div
+{
+    width: 100%;
+    height: 50px;
+    background-color: #151418;
+    font-size: smaller;
+    color: snow;
+}
+.main_things
+{
+    width: 100%;
+     background-image:linear-gradient( #515e86, #2a3147,#161a25 );
+    border-radius: 10px;
+    position: fixed;
+    bottom: 35px;
+    right: 0%;
+    color: #dfdfdf;
+    display: flex;
+    gap: 5%;
+    height: 250px;
+    opacity: 0.9;
+    flex-direction: row;
+    box-shadow: 5px 5px 5px black;
+}
+.Main_input
+{
+    background-color: #181b27;
+    width: 100%;
+    height: 220px;
+    position: relative;
+    top: 10px;
+    border-radius: 10px;
+    right: 2%;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+}
+.colour_inputs
+{
+    display: flex;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    text-shadow: 5px 5px 5px black;
+}
+.Main_number_input
+{    
+    display: flex;
+    position: relative;
+    top: 5px;
+    width:100%;
+    gap: 5%;
+    height: 50px;
+    text-align: center;
+}
+.left_one
+{
+    text-align: center;
+    position: relative;
+    left: 30%;
+}
+.Main_number_input input
+{
+    position: relative;
+    display: flex;
+    background-color: #272d41;
+    border: none;
+    width: min-content;
+    border-radius: 10px;
+    color: snow;
+    text-align: center;
+    width: 100%;
+    height: 35px;
+}
+.Main_number_input input:hover, .colour_inputs input:hover, .Main_buttons button:hover, .main_text li:hover
+{
+    box-shadow: 10px 10px 10px black;
+    background-image:linear-gradient( #515e86, #2a3147);
+
+}
+.colour_inputs legend, .Main_number_input legend
+{
+    width: 100%;
+}
+.colour_inputs input
+{
+    position: relative;
+    border: none;
+    width: 100%;
+    background-color: #181b27;
+    height: 50px;
+}
+.Note_items
+{
+    position: relative;
+    top: 10px;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+    background-color: #272d41;
+    border-radius: 10px;
+    height: 220px;
+}
+.Note_items ol{position: relative; right: 20%;}
+.Note_items li
+{
+    list-style: none;
+}
+.Main_buttons
+{
+    display: flex;
+}
+.Main_buttons button
+{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #1d2231;
+    border: none;
+    color: snow;
+}
+.main_text
+{
+    position: relative;
+    top: 15px;
+    left: 1%;
+    height: 215px;
+    width: 40%;
+    background-color: #191c29;
+    border-radius: 5px;
+    text-align: start;
+    color: rgb(3, 184, 3);
+    overflow-y: scroll;
+}
+.main_text li
+{
+    list-style-type:decimal;
+    width: 100%;
+    text-shadow: 5px 5px 5px black;
+}
+@keyframes Ligt_to_dark {
+    0%{background-color: #194ff1;}
+    100%{background-color: #020613}
+}
+@keyframes Moveing_to_the_left {
+    0%{}
+    100%{position: fixed; left: 95%; bottom: 910px;}
+}
+@keyframes Going_back {
+    0%{}
+    100%{position: fixed; left: -1%; bottom: 100px;}
+}
+
+@media (max-width: 1000px) {
+    .Main_input
+    {
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+    .colour_inputs
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .colour_inputs input
+    {
+        width: 100%;
+    }
+    .Main_number_input
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .Main_buttons
+    {
+        position: relative;
+        top: 180px;
+        display: flex;
+        flex-direction: column;
+        gap: 1%;
+    }
+    .Main_buttons button 
+    {
+        width: 100%;
+        height: 50px;
+    }
+}
